@@ -28,4 +28,4 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
       - run:
           name: Run PHPUnit
-          command: composer phpunit
+          command: vendor/bin/phpunit
